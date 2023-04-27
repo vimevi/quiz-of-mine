@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<link href="reset.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<h1>Guessing Words in English</h1>
+		<p>Translate the following words into Russian:</p>
+		<p id="english-word"></p>
+		<input type="text" id="user-input">
+		<button onclick="checkAnswer()">Check Answer</button>
+		<button onclick="nextWord()">Next Word</button>
+		<div id="result"></div>
+
+		<hr>
+
+		<h2>Add a New Word to the Quiz:</h2>
+		<form onsubmit="addWord(event)">
+			<label for="english-word-input">English Word:</label>
+			<input type="text" id="english-word-input">
+			<br>
+			<label for="russian-word-input">Russian Word:</label>
+			<input type="text" id="russian-word-input">
+			<br>
+			<button type="submit">Add Word</button>
+		</form>
+	</div>
+
+	<script src="main.js"></script>
+</body>
+
+</html>
