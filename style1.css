@@ -1,0 +1,79 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f9e9e9;
+	color: #5a5a5a;
+	font-size: 30px;
+}
+
+.container {
+	width: 90%;
+	max-width: 600px;
+	margin: 50px auto;
+	padding: 30px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+	border-radius: 10px;
+}
+
+h1 {
+	font-family: "Indie Flower", cursive;
+	margin-bottom: 20px;
+}
+
+h2 {
+	padding: 30px;
+}
+
+button {
+	background-color: #e68a8a;
+	background-image: linear-gradient(to bottom, #e68a8a, #d54b4b);
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+	margin: 10px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	font-size: 20px;
+}
+
+button:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"] {
+	border: 2px solid #e68a8a;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 10px 0;
+	width: 100%;
+	transition: all 0.3s ease;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus {
+	border-color: #d54b4b;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	font-weight: bold;
+}
+
+input[type="text"] + br {
+	margin-bottom: 10px;
+}
+
+#english-word {
+	border-radius: 50px;
+	color: white;
+	margin: 10px 80px;
+	padding: 10px 10px;
+	text-align: center;
+	background-image: linear-gradient(to bottom, #e68a8a, #d54b4b);
+}
